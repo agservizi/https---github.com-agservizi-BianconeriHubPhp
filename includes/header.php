@@ -66,8 +66,15 @@ $topNavItems = getNavigationItems();
                         <a href="?page=home" class="inline-flex items-center gap-3">
                             <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-white text-black text-xl font-bold">BH</span>
                             <div>
-                                <p class="text-sm uppercase tracking-[0.3em] text-gray-500">BianconeriHub</p>
-                                <h1 class="text-3xl font-bold tracking-tight md:text-4xl">La tua fan app ufficiale ⚪⚫</h1>
+                                <p class="text-sm uppercase tracking-[0.3em] text-gray-500 flex items-center gap-3">
+                                    <span>BianconeriHub</span>
+                                    <span class="flex items-center gap-1 text-yellow-400 text-lg" aria-hidden="true">
+                                        <span>★</span>
+                                        <span>★</span>
+                                        <span>★</span>
+                                    </span>
+                                </p>
+                                <h1 class="text-3xl font-bold tracking-tight md:text-4xl">La tua fan app ufficiale</h1>
                             </div>
                         </a>
                         <p class="text-sm text-gray-300 leading-relaxed max-w-lg">
