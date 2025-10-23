@@ -19,6 +19,22 @@
         letter-spacing: 0.08em;
         text-transform: uppercase;
     }
+
+    .app-card {
+        position: relative;
+        border-radius: 1.5rem;
+        background: linear-gradient(135deg, rgba(32, 32, 32, 0.9) 0%, rgba(18, 18, 18, 0.9) 100%);
+        border: 1px solid rgba(255, 255, 255, 0.04);
+        box-shadow: 0 20px 40px -25px rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(12px);
+    }
+
+    .glass-panel {
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0));
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        box-shadow: 0 8px 24px -16px rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(18px);
+    }
 }
 
 @layer utilities {
@@ -27,5 +43,19 @@
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
+    }
+
+    .grid-auto-fit {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .radial-highlight {
+        position: absolute;
+        inset: -120px;
+        background: radial-gradient(circle at top right, rgba(192, 192, 192, 0.08), transparent 60%);
+        pointer-events: none;
+        z-index: -1;
     }
 }
