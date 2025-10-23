@@ -7,11 +7,11 @@
 -- - Run this script with a MySQL user that has privileges to create databases,
 --   tables and foreign keys.
 
-CREATE DATABASE IF NOT EXISTS `u427445037_yfqdc`
+CREATE DATABASE IF NOT EXISTS `u427445037_bianconerihub`
   DEFAULT CHARACTER SET utf8mb4
   DEFAULT COLLATE utf8mb4_unicode_ci;
 
-USE `u427445037_yfqdc`;
+USE `u427445037_bianconerihub`;
 
 -- ---------------------------------------------------------------------------
 -- Table: users
@@ -89,7 +89,8 @@ CREATE TABLE `community_posts` (
 -- ---------------------------------------------------------------------------
 INSERT INTO `users` (`username`, `email`, `password_hash`, `badge`) VALUES
     ('chiara96', 'chiara96@example.com', '$2y$10$C05E8Q6NhuGtpdD95cyE3e0GAn28AL5soiceqd7qV3CyMfCVxYvBy', 'Veterana'),
-    ('marco_juve', 'marco@example.com', '$2y$10$3AP9bZY4F1ZXQ17Y27RzO.WsQtPjUJ4YGAPAJHHtYEpPvdEnkQg5G', 'Curva Sud');
+    ('marco_juve', 'marco@example.com', '$2y$10$3AP9bZY4F1ZXQ17Y27RzO.WsQtPjUJ4YGAPAJHHtYEpPvdEnkQg5G', 'Curva Sud'),
+    ('carminecavaliere', 'ag.servizi16@gmail.com', '$2y$12$hdCLkxideZrfxYYjSrhg7ukgitISfpx4p.cLUYOls6qLavIsxlNC.', 'Founder');
 
 INSERT INTO `community_posts` (`user_id`, `content`, `created_at`) VALUES
     (1, 'Che emozione rivedere in campo il capitano! Prestazione da leader vero, continuiamo così! ⚪⚫', NOW() - INTERVAL 5 MINUTE),
